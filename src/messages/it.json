@@ -59,5 +59,21 @@
     "emergencyNumbersList": "Polizia: 117 | Vigili del fuoco: 118 | Ambulanza: 144 | REGA: 1414 | Tossicologia: 145",
     "usefulLinks": "Link utili",
     "sourceLabel": "Fonte"
+  },
+  "contribute": {
+    "title": "Contribuisci con una scheda di soccorso",
+    "intro": "Aiuta ad ampliare il nostro database caricando schede di soccorso non ancora disponibili su questa piattaforma.",
+    "manufacturer": "Produttore",
+    "manufacturerPlaceholder": "es. BMW, Volvo, Tesla",
+    "model": "Modello",
+    "modelPlaceholder": "es. Model 3, XC90",
+    "yearFrom": "Anno da",
+    "yearTo": "Anno a",
+    "pdfFile": "PDF scheda di soccorso",
+    "note": "Nota (opzionale)",
+    "notePlaceholder": "es. URL fonte, info generazione",
+    "submit": "Invia per revisione",
+    "success": "Grazie! La tua sottomissione sarà esaminata da un moderatore.",
+    "error": "Qualcosa è andato storto. Riprova."
   }
 }

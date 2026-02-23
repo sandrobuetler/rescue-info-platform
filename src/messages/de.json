@@ -59,5 +59,21 @@
     "emergencyNumbersList": "Polizei: 117 | Feuerwehr: 118 | Ambulanz: 144 | REGA: 1414 | Toxikologie: 145",
     "usefulLinks": "Nützliche Links",
     "sourceLabel": "Quelle"
+  },
+  "contribute": {
+    "title": "Rettungskarte beitragen",
+    "intro": "Helfen Sie mit, unsere Datenbank zu erweitern, indem Sie Rettungskarten hochladen, die noch nicht auf dieser Plattform verfügbar sind.",
+    "manufacturer": "Hersteller",
+    "manufacturerPlaceholder": "z.B. BMW, Volvo, Tesla",
+    "model": "Modell",
+    "modelPlaceholder": "z.B. Model 3, XC90",
+    "yearFrom": "Baujahr von",
+    "yearTo": "Baujahr bis",
+    "pdfFile": "Rettungskarte PDF",
+    "note": "Anmerkung (optional)",
+    "notePlaceholder": "z.B. Quell-URL, Generationsinfo",
+    "submit": "Zur Prüfung einreichen",
+    "success": "Vielen Dank! Ihre Einreichung wird von einem Moderator geprüft.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   }
 }

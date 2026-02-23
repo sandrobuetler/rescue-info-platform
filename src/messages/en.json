@@ -59,5 +59,21 @@
     "emergencyNumbersList": "Police: 117 | Fire: 118 | Ambulance: 144 | REGA: 1414 | Toxicology: 145",
     "usefulLinks": "Useful Links",
     "sourceLabel": "Source"
+  },
+  "contribute": {
+    "title": "Contribute a Rescue Card",
+    "intro": "Help expand our database by uploading rescue cards that are not yet available on this platform.",
+    "manufacturer": "Manufacturer",
+    "manufacturerPlaceholder": "e.g. BMW, Volvo, Tesla",
+    "model": "Model",
+    "modelPlaceholder": "e.g. Model 3, XC90",
+    "yearFrom": "Year from",
+    "yearTo": "Year to",
+    "pdfFile": "Rescue Card PDF",
+    "note": "Note (optional)",
+    "notePlaceholder": "e.g. source URL, generation info",
+    "submit": "Submit for Review",
+    "success": "Thank you! Your submission will be reviewed by a moderator.",
+    "error": "Something went wrong. Please try again."
   }
 }
