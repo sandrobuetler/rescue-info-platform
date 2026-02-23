@@ -27,5 +27,37 @@
     "searchButton": "Trova scheda di soccorso",
     "noResults": "Nessuna scheda di soccorso trovata per questo veicolo.",
     "loading": "Ricerca in corso..."
+  },
+  "about": {
+    "title": "Informazioni su Rescue Info",
+    "intro": "Rescue Info è un progetto open-source indipendente e non commerciale che rende le schede di soccorso dei veicoli facilmente accessibili per i proprietari di auto e i primi soccorritori in Svizzera.",
+    "disclaimer": "Questa piattaforma non è affiliata ad alcun costruttore automobilistico, organizzazione di soccorso o ente governativo. Le schede di soccorso provengono da risorse pubbliche dei costruttori e degli aggregatori. Non garantiamo completezza o accuratezza. Questa piattaforma non sostituisce una formazione professionale di emergenza.",
+    "openSource": "Questo progetto è open-source e rilasciato sotto licenza GPL-3.0.",
+    "blogLabel": "Blog dell'autore"
+  },
+  "legal": {
+    "title": "Informazioni legali",
+    "impressumTitle": "Impressum",
+    "impressumContent": "[Il tuo nome e i tuoi contatti qui]",
+    "privacyTitle": "Informativa sulla privacy",
+    "privacyContent": "Questo sito non raccoglie dati personali. Non sono richiesti account utente. Non vengono utilizzati cookie a fini di tracciamento.",
+    "licenseTitle": "Licenza",
+    "licenseContent": "Questo progetto è rilasciato sotto la GNU General Public License v3.0.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerContent": "Le informazioni fornite su questa piattaforma sono solo a scopo informativo generale. Sebbene ci impegniamo a mantenere le informazioni aggiornate e corrette, non forniamo alcuna dichiarazione o garanzia riguardo alla completezza, accuratezza o affidabilità delle informazioni. Le schede di soccorso provengono da fonti pubbliche e potrebbero non riflettere gli ultimi aggiornamenti dei costruttori."
+  },
+  "support": {
+    "title": "Sostieni questo progetto",
+    "intro": "Rescue Info è un progetto open-source gratuito. Se lo trovi utile, puoi sostenere il suo sviluppo e i costi di hosting.",
+    "githubSponsors": "Sostieni via GitHub Sponsors",
+    "openCollective": "Sostieni via Open Collective"
+  },
+  "safety": {
+    "title": "Risorse di sicurezza",
+    "intro": "Informazioni e risorse di sicurezza selezionate per la Svizzera. Ogni informazione rimanda alla sua fonte originale.",
+    "emergencyNumbers": "Numeri di emergenza",
+    "emergencyNumbersList": "Polizia: 117 | Vigili del fuoco: 118 | Ambulanza: 144 | REGA: 1414 | Tossicologia: 145",
+    "usefulLinks": "Link utili",
+    "sourceLabel": "Fonte"
   }
 }

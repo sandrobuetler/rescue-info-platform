@@ -27,5 +27,37 @@
     "searchButton": "Find Rescue Card",
     "noResults": "No rescue cards found for this vehicle.",
     "loading": "Searching..."
+  },
+  "about": {
+    "title": "About Rescue Info",
+    "intro": "Rescue Info is an independent, non-commercial open-source project that makes vehicle rescue cards (Rettungskarten) easily accessible for car owners and first responders in Switzerland.",
+    "disclaimer": "This platform is not affiliated with any car manufacturer, rescue organization, or government body. Rescue cards are sourced from publicly available manufacturer and aggregator resources. We do not guarantee completeness or accuracy. This platform is not a substitute for professional emergency training.",
+    "openSource": "This project is open-source and licensed under GPL-3.0.",
+    "blogLabel": "Author's Blog"
+  },
+  "legal": {
+    "title": "Legal Information",
+    "impressumTitle": "Impressum",
+    "impressumContent": "[Your name and contact information here]",
+    "privacyTitle": "Privacy Policy",
+    "privacyContent": "This website does not collect personal data. No user accounts are required. No cookies are used for tracking purposes.",
+    "licenseTitle": "License",
+    "licenseContent": "This project is licensed under the GNU General Public License v3.0.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerContent": "The information provided on this platform is for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind about the completeness, accuracy, or reliability of the information. Rescue cards are sourced from publicly available resources and may not reflect the latest updates from manufacturers."
+  },
+  "support": {
+    "title": "Support This Project",
+    "intro": "Rescue Info is a free, open-source project. If you find it useful, you can support its development and hosting costs.",
+    "githubSponsors": "Support via GitHub Sponsors",
+    "openCollective": "Support via Open Collective"
+  },
+  "safety": {
+    "title": "Safety Resources",
+    "intro": "Curated safety information and resources for Switzerland. Every piece of information links to its original source.",
+    "emergencyNumbers": "Emergency Numbers",
+    "emergencyNumbersList": "Police: 117 | Fire: 118 | Ambulance: 144 | REGA: 1414 | Toxicology: 145",
+    "usefulLinks": "Useful Links",
+    "sourceLabel": "Source"
   }
 }

@@ -27,5 +27,37 @@
     "searchButton": "Trouver la fiche de secours",
     "noResults": "Aucune fiche de secours trouvée pour ce véhicule.",
     "loading": "Recherche en cours..."
+  },
+  "about": {
+    "title": "À propos de Rescue Info",
+    "intro": "Rescue Info est un projet open-source indépendant et non-commercial qui rend les fiches de secours véhicules facilement accessibles pour les propriétaires de voitures et les premiers intervenants en Suisse.",
+    "disclaimer": "Cette plateforme n'est affiliée à aucun constructeur automobile, organisation de secours ou organisme gouvernemental. Les fiches de secours proviennent de ressources publiques des constructeurs et agrégateurs. Nous ne garantissons ni l'exhaustivité ni l'exactitude. Cette plateforme ne remplace pas une formation professionnelle aux urgences.",
+    "openSource": "Ce projet est open-source et sous licence GPL-3.0.",
+    "blogLabel": "Blog de l'auteur"
+  },
+  "legal": {
+    "title": "Informations légales",
+    "impressumTitle": "Mentions légales",
+    "impressumContent": "[Votre nom et coordonnées ici]",
+    "privacyTitle": "Politique de confidentialité",
+    "privacyContent": "Ce site ne collecte aucune donnée personnelle. Aucun compte utilisateur n'est requis. Aucun cookie n'est utilisé à des fins de suivi.",
+    "licenseTitle": "Licence",
+    "licenseContent": "Ce projet est sous licence GNU General Public License v3.0.",
+    "disclaimerTitle": "Avertissement",
+    "disclaimerContent": "Les informations fournies sur cette plateforme sont à titre informatif uniquement. Bien que nous nous efforcions de maintenir les informations à jour et correctes, nous ne faisons aucune déclaration ou garantie quant à l'exhaustivité, l'exactitude ou la fiabilité des informations. Les fiches de secours proviennent de sources publiques et peuvent ne pas refléter les dernières mises à jour des constructeurs."
+  },
+  "support": {
+    "title": "Soutenir ce projet",
+    "intro": "Rescue Info est un projet open-source gratuit. Si vous le trouvez utile, vous pouvez soutenir son développement et ses coûts d'hébergement.",
+    "githubSponsors": "Soutenir via GitHub Sponsors",
+    "openCollective": "Soutenir via Open Collective"
+  },
+  "safety": {
+    "title": "Ressources de sécurité",
+    "intro": "Informations de sécurité et ressources sélectionnées pour la Suisse. Chaque information renvoie à sa source originale.",
+    "emergencyNumbers": "Numéros d'urgence",
+    "emergencyNumbersList": "Police: 117 | Pompiers: 118 | Ambulance: 144 | REGA: 1414 | Toxicologie: 145",
+    "usefulLinks": "Liens utiles",
+    "sourceLabel": "Source"
   }
 }
