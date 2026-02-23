@@ -26,6 +26,15 @@ services:
       - DATABASE_PATH=/app/data/rescue-info.db
     entrypoint: ["sh", "-c", "while true; do npx tsx scripts/scraper/index.ts; sleep 604800; done"]
 
+  backup:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - app-data:/app/data
+    environment:
+      - DATABASE_PATH=/app/data/rescue-info.db
+    entrypoint: ["sh", "-c", "while true; do sh scripts/backup-db.sh; sleep 604800; done"]
+
 volumes:
   app-data:
 
