@@ -32,7 +32,7 @@ export default async function VehicleDetailPage({ params }: Props) {
       <div className="bg-gray-50 rounded-lg p-6 mb-6">
         {card.pdf_path ? (
           <a
-            href={`/data/pdfs/${card.pdf_path}`}
+            href={`/api/pdfs/${card.pdf_path}`}
             download
             className="inline-block px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700"
           >
