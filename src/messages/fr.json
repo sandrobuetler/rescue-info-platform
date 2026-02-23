@@ -75,6 +75,11 @@
     "notePlaceholder": "p.ex. URL source, infos de génération",
     "submit": "Soumettre pour vérification",
     "captcha": "Combien font {a} + {b} ?",
+    "addNew": "Ajouter nouveau...",
+    "newManufacturerPlaceholder": "Nouveau constructeur",
+    "newModelPlaceholder": "Nouveau modèle",
+    "selectManufacturer": "Choisir le constructeur",
+    "selectModel": "Choisir le modèle",
     "addAnother": "Soumettre une autre fiche de secours",
     "success": "Merci ! Votre soumission sera examinée par un modérateur.",
     "error": "Une erreur est survenue. Vérifiez le captcha et réessayez."

@@ -2,8 +2,19 @@
 
 import { useTranslations } from "next-intl";
 import { FormEvent, useState, useCallback, useEffect } from "react";
+import Combobox from "@/components/Combobox";
 
 type Status = "idle" | "submitting" | "success" | "error";
+
+interface Manufacturer {
+  id: number;
+  name: string;
+}
+
+interface Model {
+  id: number;
+  name: string;
+}
 
 function generateCaptcha() {
   const a = Math.floor(Math.random() * 10) + 1;
@@ -11,22 +22,71 @@ function generateCaptcha() {
   return { a, b, answer: a + b };
 }
 
+const currentYear = new Date().getFullYear();
+const YEARS = Array.from({ length: currentYear - 1990 + 2 }, (_, i) =>
+  String(currentYear + 1 - i)
+);
+
 export default function ContributePage() {
   const t = useTranslations("contribute");
   const [status, setStatus] = useState<Status>("idle");
   const [captcha, setCaptcha] = useState(() => generateCaptcha());
   const [captchaInput, setCaptchaInput] = useState("");
 
+  const [manufacturers, setManufacturers] = useState<Manufacturer[]>([]);
+  const [models, setModels] = useState<Model[]>([]);
+  const [manufacturer, setManufacturer] = useState("");
+  const [model, setModel] = useState("");
+  const [yearFrom, setYearFrom] = useState("");
+  const [yearTo, setYearTo] = useState("");
+
+  // Track whether the selected manufacturer is from DB (has an ID)
+  const [selectedManufacturerId, setSelectedManufacturerId] = useState<
+    number | null
+  >(null);
+
   const resetForm = useCallback(() => {
     setStatus("idle");
     setCaptcha(generateCaptcha());
     setCaptchaInput("");
+    setManufacturer("");
+    setModel("");
+    setYearFrom("");
+    setYearTo("");
+    setSelectedManufacturerId(null);
+    setModels([]);
   }, []);
 
   // Generate a new captcha on mount to avoid SSR mismatch
   useEffect(() => {
     setCaptcha(generateCaptcha());
   }, []);
+
+  // Fetch manufacturers on mount
+  useEffect(() => {
+    fetch("/api/vehicles/manufacturers")
+      .then((res) => res.json())
+      .then(setManufacturers)
+      .catch(() => {});
+  }, []);
+
+  // Fetch models when a known manufacturer is selected
+  useEffect(() => {
+    if (selectedManufacturerId) {
+      fetch(`/api/vehicles/models?manufacturer_id=${selectedManufacturerId}`)
+        .then((res) => res.json())
+        .then(setModels)
+        .catch(() => {});
+    }
+  }, [selectedManufacturerId]);
+
+  function handleManufacturerChange(value: string) {
+    const mfr = manufacturers.find((m) => m.name === value);
+    setSelectedManufacturerId(mfr ? mfr.id : null);
+    setManufacturer(value);
+    setModel("");
+    if (!mfr) setModels([]);
+  }
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -61,6 +121,16 @@ export default function ContributePage() {
       setCaptchaInput("");
     }
   }
+
+  const manufacturerOptions = manufacturers.map((m) => ({
+    value: m.name,
+    label: m.name,
+  }));
+
+  const modelOptions = models.map((m) => ({
+    value: m.name,
+    label: m.name,
+  }));
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
@@ -106,13 +176,15 @@ export default function ContributePage() {
               >
                 {t("manufacturer")} *
               </label>
-              <input
-                type="text"
-                id="manufacturer"
+              <Combobox
+                options={manufacturerOptions}
+                value={manufacturer}
+                onChange={handleManufacturerChange}
+                placeholder={t("selectManufacturer")}
+                addNewLabel={t("addNew")}
+                addNewPlaceholder={t("newManufacturerPlaceholder")}
                 name="manufacturer"
                 required
-                placeholder={t("manufacturerPlaceholder")}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
               />
             </div>
 
@@ -123,13 +195,16 @@ export default function ContributePage() {
               >
                 {t("model")} *
               </label>
-              <input
-                type="text"
-                id="model"
+              <Combobox
+                options={modelOptions}
+                value={model}
+                onChange={setModel}
+                placeholder={t("selectModel")}
+                addNewLabel={t("addNew")}
+                addNewPlaceholder={t("newModelPlaceholder")}
                 name="model"
                 required
-                placeholder={t("modelPlaceholder")}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                disabled={!manufacturer}
               />
             </div>
 
@@ -141,14 +216,20 @@ export default function ContributePage() {
                 >
                   {t("yearFrom")}
                 </label>
-                <input
-                  type="number"
+                <select
                   id="yearFrom"
                   name="yearFrom"
-                  min={1990}
-                  max={2099}
+                  value={yearFrom}
+                  onChange={(e) => setYearFrom(e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-                />
+                >
+                  <option value="">–</option>
+                  {YEARS.map((y) => (
+                    <option key={y} value={y}>
+                      {y}
+                    </option>
+                  ))}
+                </select>
               </div>
               <div>
                 <label
@@ -157,14 +238,20 @@ export default function ContributePage() {
                 >
                   {t("yearTo")}
                 </label>
-                <input
-                  type="number"
+                <select
                   id="yearTo"
                   name="yearTo"
-                  min={1990}
-                  max={2099}
+                  value={yearTo}
+                  onChange={(e) => setYearTo(e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-                />
+                >
+                  <option value="">–</option>
+                  {YEARS.map((y) => (
+                    <option key={y} value={y}>
+                      {y}
+                    </option>
+                  ))}
+                </select>
               </div>
             </div>
 

@@ -75,6 +75,11 @@
     "notePlaceholder": "e.g. source URL, generation info",
     "submit": "Submit for Review",
     "captcha": "What is {a} + {b}?",
+    "addNew": "Add new...",
+    "newManufacturerPlaceholder": "Enter new manufacturer",
+    "newModelPlaceholder": "Enter new model",
+    "selectManufacturer": "Select manufacturer",
+    "selectModel": "Select model",
     "addAnother": "Submit Another Rescue Card",
     "success": "Thank you! Your submission will be reviewed by a moderator.",
     "error": "Something went wrong. Please check the captcha and try again."

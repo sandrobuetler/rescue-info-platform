@@ -75,6 +75,11 @@
     "notePlaceholder": "es. URL fonte, info generazione",
     "submit": "Invia per revisione",
     "captcha": "Quanto fa {a} + {b}?",
+    "addNew": "Aggiungi nuovo...",
+    "newManufacturerPlaceholder": "Inserisci nuovo produttore",
+    "newModelPlaceholder": "Inserisci nuovo modello",
+    "selectManufacturer": "Seleziona produttore",
+    "selectModel": "Seleziona modello",
     "addAnother": "Invia un'altra scheda di soccorso",
     "success": "Grazie! La tua sottomissione sarà esaminata da un moderatore.",
     "error": "Qualcosa è andato storto. Verifica il captcha e riprova."
