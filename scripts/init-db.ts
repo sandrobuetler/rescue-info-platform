@@ -39,6 +39,18 @@ db.exec(`
     UNIQUE(model_id, year_from, year_to)
   );
 
+  CREATE TABLE IF NOT EXISTS pending_submissions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    manufacturer_name TEXT NOT NULL,
+    model_name TEXT NOT NULL,
+    year_from INTEGER,
+    year_to INTEGER,
+    pdf_path TEXT NOT NULL,
+    submitter_note TEXT,
+    submitted_at TEXT NOT NULL DEFAULT (datetime('now')),
+    status TEXT NOT NULL DEFAULT 'pending'
+  );
+
   CREATE INDEX IF NOT EXISTS idx_models_manufacturer ON models(manufacturer_id);
   CREATE INDEX IF NOT EXISTS idx_rescue_cards_model ON rescue_cards(model_id);
 `);
