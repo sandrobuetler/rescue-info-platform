@@ -20,9 +20,11 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/scripts ./scripts
+COPY --from=deps /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-RUN mkdir -p /app/data && chown nextjs:nodejs /app/data
+RUN apk add --no-cache sqlite
+RUN mkdir -p /app/data/pdfs/pending && chown -R nextjs:nodejs /app/data
 
 USER nextjs
 EXPOSE 3000
