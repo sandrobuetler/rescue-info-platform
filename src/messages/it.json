@@ -19,5 +19,13 @@
     "disclaimer": "Non è un servizio di emergenza ufficiale. Fonti collegate in ogni pagina.",
     "sourceCode": "Codice sorgente su GitHub",
     "blog": "Blog"
+  },
+  "search": {
+    "selectManufacturer": "Seleziona costruttore",
+    "selectModel": "Seleziona modello",
+    "enterYear": "Anno (opzionale)",
+    "searchButton": "Trova scheda di soccorso",
+    "noResults": "Nessuna scheda di soccorso trovata per questo veicolo.",
+    "loading": "Ricerca in corso..."
   }
 }

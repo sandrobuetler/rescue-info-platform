@@ -19,5 +19,13 @@
     "disclaimer": "Kein offizieller Rettungsdienst. Quellen auf jeder Seite verlinkt.",
     "sourceCode": "Quellcode auf GitHub",
     "blog": "Blog"
+  },
+  "search": {
+    "selectManufacturer": "Hersteller wählen",
+    "selectModel": "Modell wählen",
+    "enterYear": "Jahrgang (optional)",
+    "searchButton": "Rettungskarte finden",
+    "noResults": "Keine Rettungskarten für dieses Fahrzeug gefunden.",
+    "loading": "Suche läuft..."
   }
 }

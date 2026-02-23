@@ -19,5 +19,13 @@
     "disclaimer": "Not an official emergency service. Sources linked on each page.",
     "sourceCode": "Source code on GitHub",
     "blog": "Blog"
+  },
+  "search": {
+    "selectManufacturer": "Select manufacturer",
+    "selectModel": "Select model",
+    "enterYear": "Year (optional)",
+    "searchButton": "Find Rescue Card",
+    "noResults": "No rescue cards found for this vehicle.",
+    "loading": "Searching..."
   }
 }

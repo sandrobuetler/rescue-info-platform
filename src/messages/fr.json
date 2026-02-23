@@ -19,5 +19,13 @@
     "disclaimer": "Ce n'est pas un service d'urgence officiel. Sources liées sur chaque page.",
     "sourceCode": "Code source sur GitHub",
     "blog": "Blog"
+  },
+  "search": {
+    "selectManufacturer": "Choisir le constructeur",
+    "selectModel": "Choisir le modèle",
+    "enterYear": "Année (optionnel)",
+    "searchButton": "Trouver la fiche de secours",
+    "noResults": "Aucune fiche de secours trouvée pour ce véhicule.",
+    "loading": "Recherche en cours..."
   }
 }
