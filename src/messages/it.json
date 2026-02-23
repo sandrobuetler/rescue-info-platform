@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Rescue Info",
+    "description": "Accesso rapido alle schede di soccorso veicoli e risorse di sicurezza"
+  },
+  "nav": {
+    "home": "Home",
+    "safety": "Sicurezza",
+    "about": "Chi siamo",
+    "support": "Sostieni",
+    "legal": "Note legali"
+  },
+  "home": {
+    "title": "Trova la scheda di soccorso del tuo veicolo",
+    "subtitle": "Accesso rapido alle schede di soccorso per primi soccorritori e proprietari di veicoli",
+    "searchPlaceholder": "Cerca per costruttore..."
+  },
+  "footer": {
+    "disclaimer": "Non è un servizio di emergenza ufficiale. Fonti collegate in ogni pagina.",
+    "sourceCode": "Codice sorgente su GitHub",
+    "blog": "Blog"
+  }
+}

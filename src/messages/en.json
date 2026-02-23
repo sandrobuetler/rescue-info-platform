@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Rescue Info",
+    "description": "Fast access to vehicle rescue cards and safety resources"
+  },
+  "nav": {
+    "home": "Home",
+    "safety": "Safety",
+    "about": "About",
+    "support": "Support",
+    "legal": "Legal"
+  },
+  "home": {
+    "title": "Find Your Vehicle Rescue Card",
+    "subtitle": "Quick access to rescue cards (Rettungskarten) for first responders and car owners",
+    "searchPlaceholder": "Search by manufacturer..."
+  },
+  "footer": {
+    "disclaimer": "Not an official emergency service. Sources linked on each page.",
+    "sourceCode": "Source code on GitHub",
+    "blog": "Blog"
+  }
+}

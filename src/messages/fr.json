@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Rescue Info",
+    "description": "Accès rapide aux fiches de secours véhicules et ressources de sécurité"
+  },
+  "nav": {
+    "home": "Accueil",
+    "safety": "Sécurité",
+    "about": "À propos",
+    "support": "Soutenir",
+    "legal": "Mentions légales"
+  },
+  "home": {
+    "title": "Trouvez la fiche de secours de votre véhicule",
+    "subtitle": "Accès rapide aux fiches de secours pour les premiers intervenants et propriétaires de véhicules",
+    "searchPlaceholder": "Rechercher par constructeur..."
+  },
+  "footer": {
+    "disclaimer": "Ce n'est pas un service d'urgence officiel. Sources liées sur chaque page.",
+    "sourceCode": "Code source sur GitHub",
+    "blog": "Blog"
+  }
+}

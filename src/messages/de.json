@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Rescue Info",
+    "description": "Schneller Zugang zu Fahrzeug-Rettungskarten und Sicherheitsressourcen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "safety": "Sicherheit",
+    "about": "Über uns",
+    "support": "Unterstützen",
+    "legal": "Rechtliches"
+  },
+  "home": {
+    "title": "Finden Sie Ihre Fahrzeug-Rettungskarte",
+    "subtitle": "Schneller Zugang zu Rettungskarten für Ersthelfer und Fahrzeugbesitzer",
+    "searchPlaceholder": "Nach Hersteller suchen..."
+  },
+  "footer": {
+    "disclaimer": "Kein offizieller Rettungsdienst. Quellen auf jeder Seite verlinkt.",
+    "sourceCode": "Quellcode auf GitHub",
+    "blog": "Blog"
+  }
+}
