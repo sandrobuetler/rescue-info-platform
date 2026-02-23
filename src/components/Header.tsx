@@ -24,6 +24,9 @@ export default function Header() {
           <Link href="/support" className="text-sm hover:text-gray-600">
             {t("support")}
           </Link>
+          <Link href="/contribute" className="text-sm hover:text-gray-600">
+            {t("contribute")}
+          </Link>
           <LanguageSwitcher />
         </nav>
       </div>
