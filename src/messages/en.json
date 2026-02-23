@@ -74,7 +74,9 @@
     "note": "Note (optional)",
     "notePlaceholder": "e.g. source URL, generation info",
     "submit": "Submit for Review",
+    "captcha": "What is {a} + {b}?",
+    "addAnother": "Submit Another Rescue Card",
     "success": "Thank you! Your submission will be reviewed by a moderator.",
-    "error": "Something went wrong. Please try again."
+    "error": "Something went wrong. Please check the captcha and try again."
   }
 }

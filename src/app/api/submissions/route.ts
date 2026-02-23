@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
       model.trim(),
       Number.isNaN(yearFromVal) ? null : yearFromVal,
       Number.isNaN(yearToVal) ? null : yearToVal,
-      `data/pdfs/pending/${filename}`,
+      `pending/${filename}`,
       note ? String(note).trim() || null : null
     );
 

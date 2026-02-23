@@ -161,6 +161,23 @@ export function approveSubmission(id: number): void {
   db.prepare("UPDATE pending_submissions SET status = 'approved' WHERE id = ?").run(id);
 }
 
+export function updateSubmission(
+  id: number,
+  data: {
+    manufacturer_name: string;
+    model_name: string;
+    year_from: number | null;
+    year_to: number | null;
+  }
+): void {
+  const db = getDb();
+  db.prepare(
+    `UPDATE pending_submissions
+     SET manufacturer_name = ?, model_name = ?, year_from = ?, year_to = ?
+     WHERE id = ? AND status = 'pending'`
+  ).run(data.manufacturer_name, data.model_name, data.year_from, data.year_to, id);
+}
+
 export function rejectSubmission(id: number): void {
   const db = getDb();
   const submission = db

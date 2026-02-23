@@ -74,7 +74,9 @@
     "note": "Nota (opzionale)",
     "notePlaceholder": "es. URL fonte, info generazione",
     "submit": "Invia per revisione",
+    "captcha": "Quanto fa {a} + {b}?",
+    "addAnother": "Invia un'altra scheda di soccorso",
     "success": "Grazie! La tua sottomissione sarà esaminata da un moderatore.",
-    "error": "Qualcosa è andato storto. Riprova."
+    "error": "Qualcosa è andato storto. Verifica il captcha e riprova."
   }
 }

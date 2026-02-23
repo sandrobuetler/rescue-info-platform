@@ -74,7 +74,9 @@
     "note": "Anmerkung (optional)",
     "notePlaceholder": "z.B. Quell-URL, Generationsinfo",
     "submit": "Zur Prüfung einreichen",
+    "captcha": "Was ist {a} + {b}?",
+    "addAnother": "Weitere Rettungskarte einreichen",
     "success": "Vielen Dank! Ihre Einreichung wird von einem Moderator geprüft.",
-    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    "error": "Etwas ist schiefgelaufen. Bitte prüfen Sie das Captcha und versuchen Sie es erneut."
   }
 }

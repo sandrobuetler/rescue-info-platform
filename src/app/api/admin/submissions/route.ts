@@ -3,6 +3,7 @@ import {
   getPendingSubmissions,
   approveSubmission,
   rejectSubmission,
+  updateSubmission,
 } from "@/lib/queries";
 
 function isAuthorized(request: NextRequest): boolean {
@@ -33,7 +34,16 @@ export async function PATCH(request: NextRequest) {
   }
 
   const body = await request.json();
-  const { id, action } = body as { id: number; action: "approve" | "reject" };
+  const { id, action, data } = body as {
+    id: number;
+    action: "approve" | "reject" | "update";
+    data?: {
+      manufacturer_name: string;
+      model_name: string;
+      year_from: number | null;
+      year_to: number | null;
+    };
+  };
 
   if (!id || !action) {
     return NextResponse.json({ error: "id and action required" }, { status: 400 });
@@ -42,6 +52,11 @@ export async function PATCH(request: NextRequest) {
   try {
     if (action === "approve") {
       approveSubmission(id);
+    } else if (action === "update") {
+      if (!data) {
+        return NextResponse.json({ error: "data required for update" }, { status: 400 });
+      }
+      updateSubmission(id, data);
     } else {
       rejectSubmission(id);
     }
