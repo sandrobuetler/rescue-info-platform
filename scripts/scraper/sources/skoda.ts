@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import type { AnyNode } from "domhandler";
 import type { ScrapedCard, SourceAdapter } from "../types";
 
 // ---------------------------------------------------------------------------
@@ -75,7 +76,7 @@ function cleanModelName(raw: string): string {
  * PDF filename as a last resort.
  */
 function deriveModelName(
-  $el: cheerio.Cheerio<cheerio.Element>,
+  $el: cheerio.Cheerio<AnyNode>,
   $: cheerio.CheerioAPI,
   href: string,
 ): string {
