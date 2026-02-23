@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "db:init": "tsx scripts/init-db.ts",
-    "db:seed": "tsx scripts/seed-sample-data.ts"
+    "db:seed": "tsx scripts/seed-sample-data.ts",
+    "scrape": "tsx scripts/scraper/index.ts"
   },
   "dependencies": {
     "better-sqlite3": "^12.6.2",
